@@ -17,8 +17,9 @@
 
     <?php
     $args = array(
-        'post_type' => 'post',
+        'post_type' => 'post', //news
         'posts_per_page' => 3,
+        'category_name' => 'news',
         'orderby' => 'date',
         'order' => 'desc',
 

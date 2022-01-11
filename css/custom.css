@@ -134,9 +134,6 @@ footer {
 }
 
 /*Menu Color*/
-.home #navbar {
-    background-color: black;
-}
 
 header .top-bar{
 	list-style-type: none;
@@ -149,6 +146,18 @@ header .top-bar{
 header .top-bar li{
 	display: inline;
 	position: relative;
+}
+
+/*Navbar dropdown*/
+header .top-bar .children{
+	display: none;
+	position: absolute;
+	z-index: 1000;
+	left: 0;
+}
+
+header .top-bar .page_item_has_children:hover .children{
+	display: block;
 }
 
 
