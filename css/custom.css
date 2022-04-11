@@ -106,10 +106,7 @@ body, html {
  body #about-us #drawing {
 	 height: 450px;
 }
- .navbar .nav-link {
-	 font-size: 1.1em !important;
-	 font-weight: bold;
-}
+
 footer {
 	 justify-content: space-around;
 	 min-height: 25%;
@@ -135,31 +132,90 @@ footer {
 
 /*Menu Color*/
 
+#navbar {
+	background: white;
+	
+  }
+  
+  
+  #navbar .nav-link {
+	font-weight: 500;
+	color: #19192E;
+	font-size: 14px;
+	letter-spacing: .5px;
+	transition: all .25s ease;
+	padding-right: 20px;
+  }
+  
+  #navbar .nav-link:hover, #navbar .nav-link:focus {
+	color: #f75757;
+  }
+ .navbar .nav-link {
+	 font-size: 1.1em !important;
+	 font-weight: bold;
+}
+
 header .top-bar{
 	list-style-type: none;
-	margin: 0;
+	margin: 0 ;
 	padding: 0;
 	display: flex;
-	float: left;
+	float: right;
 }
 
 header .top-bar li{
 	display: inline;
 	position: relative;
+	padding: 0.25rem 1rem;
 }
 
+
+
+
 /*Navbar dropdown*/
-header .top-bar .children{
+header .top-bar .sub-menu{
 	display: none;
 	position: absolute;
 	z-index: 1000;
-	left: 0;
+	top: 100%;
+	background-color: #fff;
+	width: 150px;
+	justify-content: center;
+	border-radius: 0.15rem;
+}
+header .top-bar .sub-menu li{
+	padding: 0;
 }
 
-header .top-bar .page_item_has_children:hover .children{
+header .top-bar .menu-item-has-children:hover .sub-menu{
 	display: block;
 }
 
+header #navbarNavAltMarkup{
+	justify-content: right;
+}
+
+/*Projects */
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+/* Links */
+a {
+	color: #242424;
+	text-decoration: none;
+  }
+  
+  a:focus, a:hover {
+	color: #f75757;
+	text-decoration: none;
+  }
+  
+  a:focus {
+	outline: none;
+  }
 
  @keyframes fadeIn {
 	 from {
