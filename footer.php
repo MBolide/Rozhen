@@ -1,83 +1,51 @@
 <!-- footer Start -->
 <footer class="footer section">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-6 col-sm-6">
-				<div class="widget">
-					<h4 class="text-capitalize mb-4">Company</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ml-auto col-sm-12 col-md-12 text-white">
+                
+                    <div class="mb-4 text-white mt-5">
+                        <h2><span>Solar and Space Weather Research</span></h2>
+                        <h5>Institute of Astronomy and National Astronomical Observatory - Bulgarian Academy of Sciences
+                        </h5>
+                        
+                        <ul class="list-inline footer-socials mt-5">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/ianaoban"><i
+                                        class="ti-facebook mr-2"></i>Facebook</a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/instituteofastronomybas/"><i
+                                        class="ti-instagram mr-2"></i>Instagram</a></li>
+                        </ul>
 
-					<ul class="list-unstyled footer-menu lh-35">
-						<li><a href="#">Terms & Conditions</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">Support</a></li>
-						<li><a href="#">FAQ</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-6 col-sm-6">
-				<div class="widget">
-					<h4 class="text-capitalize mb-4">Quick Links</h4>
 
-					<ul class="list-unstyled footer-menu lh-35">
-						<li><a href="#">About</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Team</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6">
-				<div class="widget">
-					<h4 class="text-capitalize mb-4">Subscribe Us</h4>
-					<p>Subscribe to get latest news article and resources  </p>
+                </div>
+            </div>
 
-					<form action="#" class="sub-form">
-						<input type="text" class="form-control mb-3" placeholder="Subscribe Now ...">
-						<a href="#" class="btn btn-main btn-small">subscribe</a>
-					</form>
-				</div>
-			</div>
+            <div class="col-lg-6 ml-auto col-sm-12 col-md-12 text-white" style="position:relative;">
+                <div style="position: absolute;bottom: 0; right: 0;">
+                    <ul class="list-inline footer-socials">
 
-			<div class="col-lg-3 ml-auto col-sm-6">
-				<div class="widget">
-					<div class="logo mb-4">
-						<h3>Mega<span>kit.</span></h3>
-					</div>
-					<h6><a href="tel:+23-345-67890" >Support@megakit.com</a></h6>
-					<a href="mailto:support@gmail.com"><span class="text-color h4">+23-456-6588</span></a>
-				</div>
-			</div>
-		</div>
-		
-		<div class="footer-btm pt-4">
-			<div class="row">
-				<div class="col-lg-4 col-md-12 col-sm-12">
-					<div class="copyright">
-						&copy; Copyright Reserved to <span class="text-color">Megakit.</span> by <a href="https://themefisher.com/" target="_blank">Themefisher</a>
-					</div>
-				</div>
+                        <li class="list-inline-item"><a href="http://www.bas.bg/"><img id="BAN"
+                                    src="<?php bloginfo('template_directory');?>/images/ban.png" width="105" height="57"
+                                    alt="BAS Bulgaria"></a></li>
+                        <li class="list-inline-item"><a href="http://nao-rozhen.org/"><img id="NAO"
+                                    src="<?php bloginfo('template_directory');?>/images/nao.png" width="100" height="58"
+                                    alt="NAO Rozhen"></a></li>
+                    </ul>
 
-				<div class="col-lg-4 col-md-12 col-sm-12">
-					<div class="copyright">
-					Distributed by  <a href="https://themewagon.com/" target="_blank">Themewagon</a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-12 col-sm-12 text-left text-lg-left">
-					<ul class="list-inline footer-socials">
-						<li class="list-inline-item"><a href="https://www.facebook.com/themefisher"><i class="ti-facebook mr-2"></i>Facebook</a></li>
-						<li class="list-inline-item"><a href="https://twitter.com/themefisher"><i class="ti-twitter mr-2"></i>Twitter</a></li>
-						<li class="list-inline-item"><a href="https://www.pinterest.com/themefisher/"><i class="ti-linkedin mr-2 "></i>Linkedin</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
-   
+                </div>
+            </div>
+
+
+        </div>
+
+
     </div>
+</footer>
 
-    <?php wp_footer(); ?>
+</div>
 
-  </body>
-  </html>
-   
+<?php wp_footer(); ?>
+
+</body>
+
+</html>

@@ -5,14 +5,9 @@
             <div class="post">
                 <div class="post-thumbnail">
                     <?php if(has_post_thumbnail()):?>
-                    <img src="<?php the_post_thumbnail_url('blog-small');?>" class="img-fluid img-thumbnail mb-3">
+                    <img src="<?php the_post_thumbnail_url('blog-small');?>" class="img-fluid img-thumbnail news-card-img">
                     <?php else: ?>
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                        focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c" />
-                    </svg>
+                        <img src="<?php bloginfo('template_directory');?>/images/Oops.png" class="img-fluid img-thumbnail news-card-img">
                     <?php endif;?>
                 </div>
                 <div class="post-header font-alt">

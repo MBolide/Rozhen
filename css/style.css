@@ -1130,7 +1130,7 @@ h3.quote::before {
 }
 
 .footer {
-  padding-bottom: 10px;
+  padding: 0px 0px 10px 0px !important;
 }
 
 .footer .copyright a {
@@ -1304,6 +1304,13 @@ h3.quote::before {
   margin: 0 0 80px;
 }
 
+.news-card-img{
+  width: 100%;
+		height: 100%;
+		object-fit: cover;
+
+}
+
 .post-title {
   line-height: 1.4;
   font-size: 22px;
@@ -1332,6 +1339,10 @@ h3.quote::before {
 
 .post-images-slider .flex-control-nav {
   bottom: 0;
+}
+
+.post-thumbnail{
+  height: 200px;
 }
 
 .post-thumbnail,
@@ -1378,7 +1389,7 @@ h3.quote::before {
 	Projects
 --------------------------------------------------------------*/
 .card-img-overlay {
-  transform: translateY(14rem);
+  transform: translateY(15rem);
   transition: transform 0.18s ease-in;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -1396,7 +1407,7 @@ h3.quote::before {
 .card-project {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.08);
-  height: 330px;
+  height: 340px;
 
 }
 .card-project .card-img{
@@ -1439,6 +1450,13 @@ h3.quote::before {
   opacity: 1 !important;
   transform: translateX(0);
   transition: opacity 0.7s ease-out, transform 0.35s ease-out;
+}
+
+/*Error 404*/
+.error404{
+  height: 80vh;
+    margin: auto;
+    display: block;
 }
 
 
