@@ -68,32 +68,6 @@ p {
   background: #f75757;
 }
 
-input[type="email"], input[type="password"], input[type="text"], input[type="tel"] {
-  box-shadow: none;
-  height: 45px;
-  outline: none;
-  font-size: 14px;
-}
-
-input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus, input[type="tel"]:focus {
-  box-shadow: none;
-  border: 1px solid #f75757;
-}
-
-.form-control {
-  box-shadow: none;
-  border-radius: 0;
-}
-
-.form-control:focus {
-  box-shadow: none;
-  border: 1px solid #f75757;
-}
-
-.py-7 {
-  padding: 7rem 0px;
-}
-
 .btn {
   display: inline-block;
   font-size: 14px;
@@ -317,59 +291,6 @@ section {
   padding: 70px 0;
 }
 
-#wrapper-work {
-  overflow: hidden;
-  padding-top: 100px;
-}
-
-#wrapper-work ul li {
-  width: 50%;
-  float: left;
-  position: relative;
-}
-
-#wrapper-work ul li img {
-  width: 100%;
-  height: 100%;
-}
-
-#wrapper-work ul li .items-text {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.6);
-  padding-left: 44px;
-  padding-top: 140px;
-}
-
-#wrapper-work ul li .items-text h2 {
-  padding-bottom: 28px;
-  padding-top: 75px;
-  position: relative;
-}
-
-#wrapper-work ul li .items-text h2:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 75px;
-  height: 3px;
-  background: #fff;
-}
-
-#wrapper-work ul li .items-text p {
-  padding-top: 30px;
-  font-size: 16px;
-  line-height: 27px;
-  font-weight: 300;
-  padding-right: 80px;
-}
 
 /*--
 	features-work Start 
@@ -470,13 +391,28 @@ ul.dropdown-menu li {
   background-attachment: fixed;
 }
 
-.homepage-top .block h1 {
+.news-top {
+  background: url("../images/news/P1100672.JPG") no-repeat;
+  background-size: cover;
+  background-position: 40% 35%;
+  padding-top: 30vh;
+  height: 85vh;
+}
+
+.news-top .bottom-right{
+  position: absolute !important;
+  top: 75% !important;
+  left: 10% !important;
+  text-align: left !important;
+}
+
+.homepage-top .block h1, .news-top .block h1 {
   font-size: 50px;
   line-height: 80px;
   color: #fff;
 }
 
-.homepage-top .block p {
+.homepage-top .block p, .news-top .block p {
   margin-bottom: 30px;
   color: #b9b9b9;
   font-size: 18px;
@@ -484,7 +420,7 @@ ul.dropdown-menu li {
   font-weight: 300;
 }
 
-.homepage-top .block span {
+.homepage-top .block span, .news-top .block span {
   letter-spacing: 1px;
 }
 
@@ -1232,11 +1168,11 @@ h3.quote::before {
   .navbar-toggler {
     color: #19192E;
   }
-  .homepage-top .block h1 {
+  .homepage-top .block h1, .news-top .block h1 {
     font-size: 28px;
     line-height: 40px;
   }
-  .homepage-top {
+  .homepage-top, .news-top {
     padding: 126px 0 151px 0;
   }
   .content-title {
@@ -1287,11 +1223,11 @@ h3.quote::before {
   .navbar-toggler {
     color: #19192E;
   }
-  .homepage-top .block h1 {
+  .homepage-top .block h1, .news-top .block h1 {
     font-size: 38px;
     line-height: 50px;
   }
-  .homepage-top {
+  .homepage-top, .news-top {
     padding: 126px 0 151px 0;
   }
   .content-title {
@@ -1342,7 +1278,7 @@ h3.quote::before {
   .footer-socials li a {
     margin-left: 0px;
   }
-  .homepage-top .block h1 {
+  .homepage-top .block h1, .news-top .block h1 {
     font-size: 56px;
     line-height: 70px;
   }
@@ -1360,4 +1296,156 @@ h3.quote::before {
     color: #19192E;
   }
 }
+
+/*--------------------------------------------------------------
+	Blog Post
+--------------------------------------------------------------*/
+.post {
+  margin: 0 0 80px;
+}
+
+.post-title {
+  line-height: 1.4;
+  font-size: 22px;
+  color: #111;
+  margin: 0;
+}
+
+.post-header {
+  margin: 0 0 15px;
+}
+
+.post-meta {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.post-entry {
+  border-top: 1px dotted #c2c2c2;
+  padding-top: 20px;
+  margin-top: 10px;
+}
+
+.post-images-slider {
+  position: relative;
+}
+
+.post-images-slider .flex-control-nav {
+  bottom: 0;
+}
+
+.post-thumbnail,
+.post-images-slider,
+.post-video {
+  margin: 0 0 20px;
+}
+
+.post-quote {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Post columns */
+.post-columns .post {
+  margin: 0 0 60px;
+}
+
+.post-columns .post-header {
+  margin: 0 0 10px;
+}
+
+.post-columns .post-title {
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.post-columns .post-entry {
+  padding: 10px 0 0;
+  margin: 0 0 10px;
+}
+
+.post-columns.wo-border .post-entry {
+  border: 0;
+  padding: 0;
+}
+
+.post-columns .post-entry p:last-child {
+  margin: 0;
+}
+
+/*--------------------------------------------------------------
+	Projects
+--------------------------------------------------------------*/
+.card-img-overlay {
+  transform: translateY(14rem);
+  transition: transform 0.18s ease-in;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.card-project p {
+  opacity: 0!important;
+  transform: translateY(-6rem);
+  transition: opacity 0.05s ease-in, transform 0.25s ease-in;
+  font-size: 1em;
+}
+.card-project .btn {
+  opacity: 0!important;
+  transform: translateY(2rem);
+}
+
+.card-project {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.08);
+  height: 330px;
+
+}
+.card-project .card-img{
+  width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-radius: 15px;
+}
+
+.card-project .card-title {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.card-project .btn {
+  border: var(--second-color-light);
+  border-radius: 15px;
+}
+.card-project .btn:hover {
+  background-color: var(--color-focus);
+}
+.card-project:hover .card-img {
+  mix-blend-mode: overlay;
+}
+.card-project:hover .card-img-overlay {
+  transform: translateY(0);
+  transition: transform 0.25s ease-out;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.card-project:hover p {
+  opacity: 1 !important;
+  transform: translateX(0);
+  transition: opacity 0.5s ease-out, transform 0.2s ease-out;
+}
+.card-project:hover .btn {
+  opacity: 1 !important;
+  transform: translateX(0);
+  transition: opacity 0.7s ease-out, transform 0.35s ease-out;
+}
+
+
+
+
+
+
+
+
 

@@ -93,7 +93,7 @@ add_image_size('small_image', 500, 250, true);
 
 
 /**
- * Filter the except length to 20 words.
+ * Filter the except length to 30 words.
  *
  * @param int $length Excerpt length.
  * @return int (Maybe) modified excerpt length.
@@ -101,10 +101,11 @@ add_image_size('small_image', 500, 250, true);
 function wpdocs_custom_excerpt_length( $length ) {
     return 20;
 }
-add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 20 );
 
 /*Menus */
 add_theme_support('menus');
+add_theme_support('post-thumbnails');
 
 register_nav_menus(
     array(
@@ -114,8 +115,7 @@ register_nav_menus(
     );
 
 //Custom Image Sizes
-add_image_size('blog-large', 800, 400, true);
-
+add_image_size('blog-large', 800, 400, false);
 add_image_size('blog-small', 300, 200, true);
 ?>
 
